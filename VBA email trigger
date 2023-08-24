@@ -11,7 +11,7 @@ Private Sub Workbook_SheetChange(ByVal Sh As Object, ByVal Target As Range)
 
         '  Email content.
 
-        emailItem.to = "timhamilton@newlinegroup.com"
+        emailItem.to = "name@company.com"
 
         emailItem.Subject = "Stereo Headsets: Low Stock"
 
@@ -37,7 +37,7 @@ Private Sub Workbook_SheetChange(ByVal Sh As Object, ByVal Target As Range)
 
         '  Email content.
 
-        emailItem.to = "jchapman@odysseygroup.com; RBlack@Newlinegroup.com; MBird@newlinegroup.com"
+        emailItem.to = "name@company.com"
 
         emailItem.Subject = "Mono Headsets: Low Stock"
 
@@ -63,7 +63,7 @@ Private Sub Workbook_SheetChange(ByVal Sh As Object, ByVal Target As Range)
 
         '  Email content.
 
-        emailItem.to = "jchapman@odysseygroup.com; RBlack@Newlinegroup.com; MBird@newlinegroup.com"
+        emailItem.to = "name@company.com"
 
         emailItem.Subject = "HP Docking Stations: Low Stock"
 
@@ -89,7 +89,7 @@ Private Sub Workbook_SheetChange(ByVal Sh As Object, ByVal Target As Range)
 
         '  Email content.
 
-        emailItem.to = "jchapman@odysseygroup.com; RBlack@Newlinegroup.com; MBird@newlinegroup.com"
+        emailItem.to = "name@company.com"
 
         emailItem.Subject = "Wireless Keyboard and Mouse kits: Low Stock"
 
@@ -115,7 +115,7 @@ Private Sub Workbook_SheetChange(ByVal Sh As Object, ByVal Target As Range)
 
         '  Email content.
 
-        emailItem.to = "jchapman@odysseygroup.com; RBlack@Newlinegroup.com; MBird@newlinegroup.com"
+        emailItem.to = "name@company.com"
 
         emailItem.Subject = "HP Elitebook G9: Low Stock"
 
