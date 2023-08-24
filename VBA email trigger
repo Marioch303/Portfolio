@@ -1,0 +1,137 @@
+' Trigger email
+
+Private Sub Workbook_SheetChange(ByVal Sh As Object, ByVal Target As Range)
+    If Target.Value > 5 Then Exit Sub
+    If IsNumeric(Target) And Target.Address = "$B$17" And Target.Value < 6 Then
+        Dim emailApplication As Object
+        Dim emailItem As Object
+
+        Set emailApplication = CreateObject("Outlook.Application")
+        Set emailItem = emailApplication.CreateItem(0)
+
+        '  Email content.
+
+        emailItem.to = "timhamilton@newlinegroup.com"
+
+        emailItem.Subject = "Stereo Headsets: Low Stock"
+
+        emailItem.Body = "There is low stock of stereo headsets, please order more."
+
+        '  Attaching workbook.
+        emailItem.Attachments.Add ActiveWorkbook.FullName
+
+        '  Send email
+        emailItem.Send
+
+        Set emailItem = Nothing
+        Set emailApplication = Nothing
+        Else
+            End If
+        
+
+    If Target.Value > 5 Then Exit Sub
+    If IsNumeric(Target) And Target.Address = "$B$19" And Target.Value < 6 Then
+        
+        Set emailApplication = CreateObject("Outlook.Application")
+        Set emailItem = emailApplication.CreateItem(0)
+
+        '  Email content.
+
+        emailItem.to = "jchapman@odysseygroup.com; RBlack@Newlinegroup.com; MBird@newlinegroup.com"
+
+        emailItem.Subject = "Mono Headsets: Low Stock"
+
+        emailItem.Body = "There is low stock of Mono headsets, please order more."
+
+        '  Attaching workbook.
+        emailItem.Attachments.Add ActiveWorkbook.FullName
+
+        '  Send email
+        emailItem.Send
+
+        Set emailItem = Nothing
+        Set emailApplication = Nothing
+    
+        Else
+            End If
+            
+    If Target.Value > 5 Then Exit Sub
+    If IsNumeric(Target) And Target.Address = "$B$22" And Target.Value < 6 Then
+        
+        Set emailApplication = CreateObject("Outlook.Application")
+        Set emailItem = emailApplication.CreateItem(0)
+
+        '  Email content.
+
+        emailItem.to = "jchapman@odysseygroup.com; RBlack@Newlinegroup.com; MBird@newlinegroup.com"
+
+        emailItem.Subject = "HP Docking Stations: Low Stock"
+
+        emailItem.Body = "There is low stock of HP Docking Stations, please order more."
+
+        '  Attaching workbook.
+        emailItem.Attachments.Add ActiveWorkbook.FullName
+
+        '  Send email
+        emailItem.Send
+
+        Set emailItem = Nothing
+        Set emailApplication = Nothing
+    
+        Else
+            End If
+            
+    If Target.Value > 5 Then Exit Sub
+    If IsNumeric(Target) And Target.Address = "$B$24" And Target.Value < 6 Then
+        
+        Set emailApplication = CreateObject("Outlook.Application")
+        Set emailItem = emailApplication.CreateItem(0)
+
+        '  Email content.
+
+        emailItem.to = "jchapman@odysseygroup.com; RBlack@Newlinegroup.com; MBird@newlinegroup.com"
+
+        emailItem.Subject = "Wireless Keyboard and Mouse kits: Low Stock"
+
+        emailItem.Body = "There is low stock of Wireless Keyboard and Mouse kits, please order more."
+
+        '  Attaching workbook.
+        emailItem.Attachments.Add ActiveWorkbook.FullName
+
+        '  Send email
+        emailItem.Send
+
+        Set emailItem = Nothing
+        Set emailApplication = Nothing
+    
+        Else
+            End If
+            
+    If Target.Value > 5 Then Exit Sub
+    If IsNumeric(Target) And Target.Address = "$B$29" And Target.Value < 6 Then
+        
+        Set emailApplication = CreateObject("Outlook.Application")
+        Set emailItem = emailApplication.CreateItem(0)
+
+        '  Email content.
+
+        emailItem.to = "jchapman@odysseygroup.com; RBlack@Newlinegroup.com; MBird@newlinegroup.com"
+
+        emailItem.Subject = "HP Elitebook G9: Low Stock"
+
+        emailItem.Body = "There is low stock of Mono headsets, please order more."
+
+        '  Attaching workbook.
+        emailItem.Attachments.Add ActiveWorkbook.FullName
+
+        '  Send email
+        emailItem.Send
+
+        Set emailItem = Nothing
+        Set emailApplication = Nothing
+    
+        Else
+            End If
+     
+         
+End Sub
